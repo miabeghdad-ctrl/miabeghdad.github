@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mia Beghdad - Autora</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background-color: #fff;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    header p {
+      color: #777;
+      font-size: 1.1em;
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+      background-color: #f2f2f2;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #7d5fff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    /* --- Sección Sobre Mí --- */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .about img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #7d5fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* --- Mis libros --- */
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .book {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .book img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    /* --- Contacto --- */
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #eee;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 250px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #7d5fff;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #6a46ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mia Beghdad</h1>
+    <p>Autora en construcción. Palabras que respiran.</p>
+  </header>
+
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#libros">Mis libros</a>
+    <a href="#blog">Blog</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobre-mi" class="about">
+    <img src="miafoto.png" alt="Foto de Mia Beghdad" />
+    <div class="about-text">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy <strong>Mia Beghdad</strong>, una autora joven y apasionada por contar historias que conecten con la emoción humana. 
+        Estoy terminando mi primer libro, un proyecto que nació de noches largas y muchas tazas de café. 
+        Creo en la escritura como una forma de entender el mundo —y sobre todo, de entendernos a nosotros mismos—.
+      </p>
+    </div>
+  </section>
+
+  <section id="libros">
+    <h2>Mis libros</h2>
+    <div class="books">
+      <div class="book">
+        <img src="Portada1.png" alt="Portada del libro" />
+        <h3><em>Próximamente...</em></h3>
+        <p>Mi primera novela, llena de emociones intensas, personajes imperfectos y un toque de misterio. 
+        Muy pronto disponible en Amazon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Noticias y blog</h2>
+    <p>Aquí compartiré reflexiones, avances y todo lo que hay detrás del proceso creativo. ¡Muy pronto!</p>
+  </section>
+
+  <footer id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a: <a href="mailto:soumiainternacional2025@gmail.com">soumiainternacional2025@gmail.com</a></p>
+
+    <h3>Suscríbete a mi newsletter</h3>
+    <input type="email" placeholder="Tu correo electrónico" />
+    <button>Suscribirme</button>
+
+    <p style="margin-top:20px; font-size:0.9em; color:#777;">© 2025 Mia Beghdad | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
