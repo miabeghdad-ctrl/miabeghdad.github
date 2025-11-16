@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mia Beghdad - Autora</title>
   <style>
+    body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
     body {
       font-family: "Georgia", Georgia;
       margin: 0;
@@ -177,7 +187,40 @@
     <h2>Contacto</h2>
     <p>Puedes escribirme a: <a href="mailto:soumiainternacional2025@gmail.com">soumiainternacional2025@gmail.com</a></p>
 
-    <h3>Suscríbete a mi newsletter</h3>
+   <section id="newsletter" style="
+    padding: 60px 20px; 
+    text-align: center; 
+    max-width: 700px; 
+    margin: 0 auto;
+">
+    <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 15px;">
+        Suscríbete a mi Newsletter
+    </h2>
+
+    <p style="font-size: 1.1rem; color: #444; margin-bottom: 25px; line-height: 1.5;">
+        Únete para recibir anuncios exclusivos, capítulos adelantados, noticias sobre mis obras 
+        y todo lo que viene en mi viaje como autora.  
+    </p>
+
+    <a href="https://soumiaabegh2008.substack.com/subscribe" 
+       target="_blank" 
+       style="
+           padding: 14px 28px; 
+           background-color: #111; 
+           color: #fff; 
+           border-radius: 10px; 
+           text-decoration: none; 
+           font-weight: 600; 
+           font-size: 1rem;
+           transition: 0.3s;
+           display: inline-block;
+       "
+       onmouseover="this.style.opacity='0.8'"
+       onmouseout="this.style.opacity='1'">
+       Suscribirme
+    </a>
+</section>
+
     <input type="email" placeholder="Tu correo electrónico" />
     <button>Suscribirme</button>
 
@@ -185,4 +228,5 @@
   </footer>
 </body>
 </html>
+
 
