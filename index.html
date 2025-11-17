@@ -186,16 +186,79 @@
               <div>
                 <strong style="font-family:'Playfair Display', serif;">Mente en blanco</strong>
                 <div class="muted">Trilogía Mentes Fragmentadas — Vol. I
-                Zara Bloom lo tenía todo: prestigio, éxito y una vida perfecta.
-Hasta que en cuestión de horas se convirtió en fugitiva.
+               <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sinopsis con Leer Más</title>
+<style>
+  body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    padding: 20px;
+    background: #fdfcfb;
+    color: #333;
+  }
 
-Un cadáver apareció enterrado en su jardín. El arma del crimen llevaba sus huellas. Y la policía está convencida de que ella es la asesina.
+  .sinopsis {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+
+  .more-text {
+    display: none;
+    transition: max-height 0.5s ease;
+  }
+
+  .read-more-btn {
+    color: #1a73e8;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="sinopsis">
+  <p>
+     Zara Bloom lo tenía todo: prestigio, éxito y una vida perfecta.
+.<br>
+   Hasta que en cuestión de horas se convirtió en fugitiva.
+    <span class="more-text">
+     Un cadáver apareció enterrado en su jardín. El arma del crimen llevaba sus huellas. Y la policía está convencida de que ella es la asesina.
 
 Un paciente despierta sin recuerdos... excepto imágenes borrosas de un asesinato que coinciden con el caso real.
 
 Ahora Helena debe enfrentarse a la peor operación de su vida: abrir su propia mente y descubrir si en ella se esconde la verdad... ya que cabe la posibilidad de que la respuesta esté en su pasado.
 
-Porque en esta historia nada es lo que parece.</div>
+Porque en esta historia nada es lo que parece.
+
+
+    </span>
+  </p>
+  <span class="read-more-btn" onclick="toggleText(this)">Leer más</span>
+</div>
+
+<script>
+function toggleText(button) {
+  const moreText = button.previousElementSibling.querySelector('.more-text');
+  if (moreText.style.display === 'none' || moreText.style.display === '') {
+    moreText.style.display = 'inline';
+    button.textContent = 'Leer menos';
+  } else {
+    moreText.style.display = 'none';
+    button.textContent = 'Leer más';
+  }
+}
+</script>
+
+</body>
+</html>
+</div>
               </div>
               <div style="text-align:right">
                 <div class="muted">Próximamente</div>
@@ -333,6 +396,7 @@ Porque en esta historia nada es lo que parece.</div>
   </script>
 </body>
 </html>
+
 
 
 
